@@ -23,10 +23,10 @@ end
 ## Usage
 
 ```ruby
-  scenario 'Show 404 for non-existant posts', :allow_rescue do
-    visit post_path(3)
-    expect(page).to have_content('was not found')
-  end
+scenario 'Show 404 for non-existant posts', :allow_rescue do
+  visit post_path(3)
+  expect(page).to have_content('was not found')
+end
 ```
 
 ## Why?
