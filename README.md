@@ -31,4 +31,5 @@ end
 
 ## Why?
 
-After extensive stackoverflowing, couldn't find a good way of turning exception pages on for select specs only. Setting `Rails.application.config.action_dispatch.show_exceptions` in the RSpec configure block seems to only work for the first spec and then gets stuck so doesn't work for running the whole suite. Thus, this configurable middleware that forces the ShowErrors middleware to show exceptions when activated.
+After extensive stackoverflowing, couldn't find a good way of turning exception pages on for select specs only. Setting `Rails.application.config.action_dispatch.show_exceptions` in the RSpec configure block seems to only work for the first spec and then gets stuck, so although it works in isolation it's no good for running the whole suite. 
+Thus, this configurable middleware that forces the ShowErrors middleware to show exceptions when activated.
