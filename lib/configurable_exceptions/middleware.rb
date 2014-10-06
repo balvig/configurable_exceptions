@@ -1,6 +1,6 @@
 # No way of toggling config.action_dispatch.show_exceptions directly it appears
-# so this configurable middleware is instead injected before before the exception
-# middleware to be able to dynamically switch them on/of for testing
+# so this configurable middleware is instead injected before the exception
+# middleware to be able to dynamically switch them on/off for testing
 
 class ConfigurableExceptions::Middleware
   def initialize(app)
