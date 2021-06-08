@@ -1,3 +1,3 @@
-module ConfigurableExceptions
+class ConfigurableExceptions
   VERSION = "1.0.1"
 end
